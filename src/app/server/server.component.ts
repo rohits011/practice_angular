@@ -14,11 +14,12 @@ import { Component } from '@angular/core';
 export class ServerComponent {
   serverStatus: String = 'offline';
   serverId: number = 10;
+  // servers=['rohit','nishu']
 
   constructor() {
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';
   }
   getColor() {
-    return this.serverStatus === 'online' ? 'green' : 'red';
+    return this.serverStatus === 'online' ? 'green' : 'pink';
   }
 }
